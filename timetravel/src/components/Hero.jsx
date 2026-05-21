@@ -16,7 +16,7 @@ export default function Hero({ onExplore, onBook }) {
       minHeight: "100vh", width: "100%",
       position: "relative", display: "flex", flexDirection: "column",
       alignItems: "center", justifyContent: "center", textAlign: "center",
-      background: "radial-gradient(ellipse at 50% 35%, #110828 0%, #04040f 65%)",
+      background: "transparent",
       overflow: "hidden", padding: "6rem 2rem 4rem",
     }}>
       <StarField count={100} />

@@ -45,9 +45,9 @@ export function Nav({ activeSection, onNav }) {
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
       padding: "0 clamp(1rem, 5vw, 5rem)",
-      background: scrolled ? "rgba(4,4,16,0.95)" : "transparent",
-      backdropFilter: scrolled ? "blur(16px)" : "none",
-      borderBottom: scrolled ? "1px solid rgba(255,200,80,0.12)" : "none",
+      background: scrolled ? "rgba(4,4,16,0.35)" : "transparent",
+      backdropFilter: scrolled ? "blur(8px)" : "none",
+      borderBottom: scrolled ? "1px solid rgba(255,200,80,0.06)" : "none",
       transition: "all 0.4s ease",
       display: "flex", alignItems: "center", justifyContent: "space-between",
       height: 70, width: "100%",

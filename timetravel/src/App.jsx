@@ -5,6 +5,8 @@ import Destinations from "./components/Destinations";
 import BookingForm from "./components/BookingForm";
 import Chatbot from "./components/Chatbot";
 
+import ParticlesBackground from "./animation/animation";
+   
 export default function App() {
   const [activeSection, setActiveSection] = useState("Accueil");
   const [bookingDest, setBookingDest] = useState(null);
@@ -53,9 +55,14 @@ export default function App() {
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255,200,80,0.25); border-radius: 2px; }
       `}</style>
+      <header className="app-header" style={{ position: 'relative' }}>
+        <ParticlesBackground />
 
-      <Nav activeSection={activeSection} onNav={handleNav} />
-      <Hero onExplore={() => handleNav("Destinations")} onBook={() => handleNav("Réserver")} />
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <Nav activeSection={activeSection} onNav={handleNav} />
+          <Hero onExplore={() => handleNav("Destinations")} onBook={() => handleNav("Réserver")} />
+        </div>
+      </header>
       <Destinations destRef={destRef} onBook={handleBook} />
       <BookingForm bookRef={bookRef} preselected={bookingDest} />
       <Footer />
