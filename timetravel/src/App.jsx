@@ -6,6 +6,7 @@ import BookingForm from "./components/BookingForm";
 import Chatbot from "./components/Chatbot";
 
 import ParticlesBackground from "./animation/animation";
+import videoSrc from "./video/video finis.mp4";
    
 export default function App() {
   const [activeSection, setActiveSection] = useState("Accueil");
@@ -65,6 +66,20 @@ export default function App() {
       </header>
       <Destinations destRef={destRef} onBook={handleBook} />
       <BookingForm bookRef={bookRef} preselected={bookingDest} />
+
+      {/* Video after booking section */}
+      <section style={{ padding: '2rem 0', background: '#02020a' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 1rem' }}>
+          <video
+            src={videoSrc}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ width: '100%', height: 'auto', borderRadius: 6, display: 'block' }}
+          />
+        </div>
+      </section>
       <Footer />
       <Chatbot />
     </div>
