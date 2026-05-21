@@ -64,7 +64,7 @@ VITE_ANTHROPIC_API_KEY=sk-ant-...
 npm run dev
 ```
 
-L'application sera disponible sur [http://localhost:5173](http://localhost:5173).
+L'application sera disponible sur [https://timetravel-1fnavaxlg-jordanquins-projects.vercel.app/](https://timetravel-1fnavaxlg-jordanquins-projects.vercel.app/).
 
 ## Scripts disponibles
 
